@@ -1,11 +1,17 @@
-<h1>My Cocktails</h1></div>
-
+<div class="banner" style="background-image: linear-gradient(-210deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://www.maxim.com/.image/t_share/MTUwODg5MTM1MDY0NzU0MDA5/cocktails-promo.jpg');">
+ <div class="banner-content">
+    <h1>Dany's Cocktails</h1>
+    <p>Learn the best Cocktails Recipes !</p>
+    <a><%= link_to "Add a new cocktail", new_cocktail_path, class: "btn-treehouse" %></a>
+  </div>
+</div>
 
 <div><% @cocktails.each do |cocktail| %>
   <h2>  <%= link_to "#{cocktail.name}", cocktail_path(cocktail)%></h2>
 <% end %>
 </div>
 
-<div>
-<p> <%= link_to "Add a new cocktail", new_cocktail_path %></p>
-</div>
+
+
+
+
