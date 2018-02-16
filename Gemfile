@@ -40,7 +40,7 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 
 # Gem Ruby for Heroku
-gem 'ruby 2.4.3'
+ruby '2.4.3'
 
 
 group :development, :test do
